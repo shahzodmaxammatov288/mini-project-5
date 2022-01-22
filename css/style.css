@@ -1,0 +1,105 @@
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #b61924;
+  font-family: sans-serif;
+}
+
+.newYear {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  z-index: 7;
+}
+
+h5 {
+  color: #ffffff;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.newYear-container {
+  display: flex;
+  margin: 15px 0;
+  z-index: 7;
+}
+
+.newYear-box {
+  color: #ffffff;
+  text-align: center;
+  margin: 5px 25px;
+}
+
+.newYear-number {
+  font-size: 55px;
+}
+
+.newYear-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fa-snowflake {
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: -20px;
+  animation: fall  linear;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .newYear-number {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .newYear-number {
+    font-size: 25px;
+  }
+  .newYear-box {
+    color: #ffffff;
+    text-align: center;
+    margin: 5px 15px;
+  }
+}
